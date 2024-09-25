@@ -1,0 +1,328 @@
+---
+title: "Homeostasis y Emociones"
+author: "Alberto Barradas"
+date: "2024-09-25"
+format: 
+  beamer-pdf:
+    theme: Madrid
+    colortheme: seahorse
+    fonttheme: professionalfonts
+    aspectratio: 169
+    slide_level: 3
+    colorlinks: true
+bibliography: references.bib
+bibliographystyle: apa
+header-includes: |
+  \usepackage{graphicx}  % To include graphics
+  \usepackage{amsmath}   % For math formulas
+  \usepackage{hyperref}  % For clickable links
+  \usepackage{ulem}      % Optional: for underlining text
+  \usepackage{tikz}      % For tikz graphs
+  \usetikzlibrary{positioning}
+  \usepackage{forest}    % For syntax trees
+---
+
+# Contenido
+
+:::: {.columns align=center}
+::: {.column width=50%}
+- Sensación y Percepción
+- Procesamiento de la Información
+- Codificación Predictiva
+- Homeostasis y Necesidades
+- Surgimiento Dependiente
+- Afecto y Emociones
+- Emociones Construidas
+- Experiencia Subjetiva
+- Personalidad y Carácter
+:::
+::::
+
+# Objetivos
+
+En general, el objetivo de hoy es compartir una perspectiva que permita contextualizar areas diversas de las ciencias cognitivas que les ayuden a desarrollar intuiciones y preguntas de investigación. Particularmente:
+
+- Establecer definiciones útiles en el estudio de la motivación y emoción.
+- Presentar las bases de modelos computacionales que respaldan a las teorías de percepción, emoción, y conciencia.
+- Mencionar algunas de las teorías más aceptadas en el estudio de la emoción y la conciencia.
+
+# Sensación y Percepción
+
+Todo empieza con la observación.
+
+:::: {.columns align=center}
+
+::: {.column width=10%}
+
+:::
+
+::: {.column width=30%}
+![](/img/01_observing.jpg)
+:::
+
+::: {.column width=30%}
+
+:::
+
+::: {.column width=30%}
+```{=latex}
+\begin{tikzpicture}
+    % Input (Senses)
+    \node[draw, rectangle, minimum width=2cm, minimum height=1cm, align=center] (input) {Sentidos};
+
+    % Black box (Cognition)
+    \node[draw, rectangle, fill=black!10, minimum width=3cm, minimum height=1.5cm, below=1.5cm of input, align=center] (blackbox) {Cognición};
+
+    % Output (Behavior)
+    \node[draw, rectangle, minimum width=2cm, minimum height=1cm, below=1.5cm of blackbox, align=center] (output) {Comportamiento};
+
+    % Arrows
+    \draw[->, thick] (input) -- (blackbox);
+    \draw[->, thick] (blackbox) -- (output); 
+\end{tikzpicture}
+```
+:::
+::::
+
+# Procesamiento de la información
+
+La información del sistema nervioso se procesa de forma jerárquica. [@jeon2014]
+
+:::: {.columns}
+
+::: {.column width=80%}
+```{=latex}
+\begin{forest}
+  for tree={grow'=0, child anchor=west, parent anchor=south, align=left, l sep=2em, anchor=west}
+  [S
+    [NP
+      [Det [El]]
+      [N [dueño]]
+      [PP
+        [P+D [del]]
+        [NP
+          [N [perro]]
+          [Adj [bravo]]
+        ]
+      ]
+    ]
+    [VP
+      [V [corre]]
+    ]
+  ]
+\end{forest}
+```
+:::
+
+::::
+
+
+# Ejemplo 1: La percepción visual
+
+El sistema visual es un ejemplo de procesamiento jerárquico. [@herzog2014vision]
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/02_receptive_fields.jpg)
+:::
+
+::::
+
+# Ejemplo 2: La percepción interoceptiva
+
+:::: {.columns}
+
+::: {.column width=60%}
+La percepción interoceptiva nos permite sensar el estado de nuestro cuerpo a partir de la información de los órganos internos [@barrett2015]. La información de estas fuentes se clasifica y agrega de manera jerárquica, generando estados diversos, que dependen la información proviniente de varios sistemas.
+:::
+
+::: {.column width=40%}
+![](/img/03_interoceptors.jpg)
+:::
+
+::::
+
+# La relación cortico-talámica
+
+:::: {.columns}
+
+::: {.column width=60%}
+No toda la información sensorial puede llegar a ser procesada conscientemente. La información sensorial se procesa en el tálamo y un agregado de esta se envía a la corteza cerebral para ser procesada conscientemente [@barrett2015]. Esto incluye la información interoceptiva.
+:::
+
+::: {.column width=40%}
+![](/img/04_thalamus.jpg)
+:::
+
+::::
+
+# Codificación Predictiva
+
+El modelo más concistente para explicar la percepción consciente es el de Codificación Predictiva. [@friston2009; @shipp2016]
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/05_predictive_coding.jpg)
+![](/img/06_predictive_cortex.jpg)
+:::
+
+::::
+
+# La hypotesis del cerebro bayesiano
+
+:::: {.columns}
+
+::: {.column width=50%}
+El cerebro es un órgano que genera expectativas sobre el mundo y las compara con la información sensorial que recibe. La diferencia entre la expectativa y la información sensorial es la base de la percepción.
+
+[Algunas sugerencias para entender el modelo de Codificación Predictiva](https://youtube.com/playlist?list=PLqeLFo13at9QrQHk9MlLMmpL1YZ5KbhbW)
+:::
+
+::: {.column width=50%}
+![](/img/07_bayes_brain.jpg)
+[@ridder2014]
+:::
+
+::::
+
+# Homeostasis y Necesidades
+
+¿Qué información interoceptiva es relevante cuando la homeostasis se pierde? El desbalance fisiológico se expresa en una sensación de necesidad.
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/08_origami.jpg)
+:::
+
+::::
+
+# Surgimiento Dependiente
+
+Una cadena de eventos que lleva a la satisfacción de una necesidad fisiológica:
+
+
+::: {.incremental}
+1. Necesidad (desbalance)
+2. Sensación
+3. Afecto
+4. Emoción
+5. Motivación
+6. Comportamiento
+:::
+
+
+# Afecto y Emociones
+
+El afecto es la codificación más sencilla de un estímulo [@barrett2017]. A cada nivel, esta codificación se da en dos dimensiones: valencia y activación [@barrett2009affect].
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/09_circimplex.jpg)
+:::
+
+::::
+
+# Emociones Construidas
+
+La teoría de la construcción de la emoción propone que las emociones son la codificación jerárquica de la sensación y el contexto [@barrett2017]. De esta forma, las emociones son contextos de la experiencia subjetiva, y todos los modelos de emoción se pueden representar en el contexto de esta teoría.
+
+ - Plutchik [@plutchik1980]
+ - Ekman [@ekman1992]
+ - Lövheim (Monoaminas) [@lovheim2012]
+ - Linguísticos [@diaz2001]
+
+# Plutchik
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/10_plutchik.png)
+[@seconds2022]
+:::
+
+::::
+
+# Ekman
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/11_ekman_emotions.jpg)
+[@mizgajski2019]
+:::
+
+::::
+
+# Lövheim
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/12_l%C3%B6vheim.png)
+[Wikipedia](https://en.wikipedia.org/wiki/L%C3%B6vheim_Cube_of_Emotions)
+:::
+
+::::
+
+# Modelos Linguísticos
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](/img/13_chromatic.jpg)
+:::
+
+::: {.column width=20%}
+[@diaz2001] [(Artículo en español)](https://www.medigraphic.com/pdfs/salmen/sam-2001/sam014c.pdf)
+:::
+
+::::
+
+# Experiencia Subjetiva
+
+Esta categorización diversa del agregado de información sensorial y contextual se puede entender como la experiencia subjetiva [@tononi2016; @oizumi2014]. Lectura sugerida: [Integrated Information Theory (IIT) of Consciousness.](https://www.nature.com/articles/nrn.2016.44)
+
+Axiomas de la IIT:
+
+1. Existencia intrínseca: la conciencia es una propiedad fundamental de la materia.
+2. Composición: la conciencia es un agregado construido de información.
+3. Información específica: la conciencia es específica a un sistema. Es decir, difiere de otros agregados de información.
+4. Inclusión: la conciencia es un agregado de información unificada e irreducible.
+5. Exclusión: la conciencia es un agregado de información única en una resolución espacio-temporal.
+
+# Personalidad y Carácter
+
+La personalidad es la predisposición a emociones, memorias y contextos [@barrett2017]. El carácter es la respuesta fisiológica a las sensaciones [@barrett2017].
+
+Así como las teorías de las emociones son contextuales, los modelos de personalidad y son dependientes del contexto. Así como el afecto es la codificación más sencilla de un estímulo, el carácter es la predisposición fisiológica a la codificación de la carga afectiva de esas sensaciones.
+
+:::: {.columns}
+
+::: {.column width=40%}
+![](/img/14_ocean.jpg)
+:::
+
+::: {.column width=20%}
+:::
+
+::: {.column width=40%}
+![](/img/15_bm.png)
+:::
+
+::::
+
+# Prácitcas Contemplativas
+
+La experiencia subjetiva es de naturaleza fluída y [transitoria](https://www.youtube.com/watch?v=Lr0UOKd1dd0). Les invito a que acompañen el estudio de cualquier fenómeno subjetivo de flexibilidad cognitiva y conteplación [@schumann2023].
+
+:::: {.columns}
+::: {.column width=50%}
+![](/img/16_Gandhara_Buddha.jpeg)
+:::
+::::
+
+# Bibliografía
